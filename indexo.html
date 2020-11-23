@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+</head>
+<link rel="stylesheet" href="indexo.css">
+
+
+<body>
+
+<div class="mean">
+    <div> <input type="text" id="input" disabled></div>
+    <div><button class="butt" onclick="cle('c')">c</button></div>
+    <div>
+        <button class="but" onclick="butt('9')">9</button>
+        <button class="but" onclick="butt('8')">8</button>
+        <button class="but" onclick="butt('7')">7</button>
+        <button class="but" onclick="butt('+')">+</button>
+    </div>
+<div>
+    
+    <button class="but" onclick="butt('6')">6</button>
+    <button class="but" onclick="butt('5')">5</button>
+    <button class="but" onclick="butt('4')">4</button>
+    <button class="but" onclick="butt('-')">-</button>
+
+</div>
+<div>
+    <button class="but" onclick="butt('3')">3</button>
+    <button class="but" onclick="butt('2')">2</button>
+    <button class="but" onclick="butt('1')">1</button>
+    <button class="but" onclick="butt('*')">*</button>
+
+</div>
+
+
+
+<div>
+    <button class="zero" onclick="butt('0')">0</button>
+    <button class="zero" onclick="equal('=')">=</button>
+
+</div>
+
+
+</div>
+
+
+
+
+    <script>
+function butt(a){
+var number = document.getElementById('input')
+number.value +=a
+}
+function cle(){
+    var number = document.getElementById('input')
+    number.value =""
+}
+function equal(){
+    var number = document.getElementById('input')
+    number.value=eval(number.value)
+}
+
+
+    </script>
+</body>
+</html>
